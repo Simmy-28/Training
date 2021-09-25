@@ -1,0 +1,51 @@
+<!--
+    A Map object holds key-value pairs where the keys can be any datatype.
+
+A Map object remembers the original insertion order of the keys.
+
+A Map object has a property that represents the size of the map. 
+Other Map() Methods
+Method	Description
+clear()	Removes all elements in a Map
+delete()	Removes an element specified by a key.
+has()	Returns true if a key exists.
+forEach()	Invokes a callback for each key/value pair.
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Map Objects</h2>
+
+<p>Being able to use an Object as a key is an important Map feature:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create Objects
+const apples = {name: 'Apples'};
+const bananas = {name: 'Bananas'};
+const oranges = {name: 'Oranges'};
+
+// Create a new Map
+const fruits = new Map();
+
+// Add the Objects to the Map
+fruits.set(apples, 500);
+fruits.set(bananas, 300);
+fruits.set(oranges, 200);
+
+// Create a new Map //another way
+/*const fruits = new Map([;
+  [apples, 500],
+  [bananas, 300],
+  [oranges, 200]
+]);*/
+
+// Display Object Type
+document.getElementById("demo").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+

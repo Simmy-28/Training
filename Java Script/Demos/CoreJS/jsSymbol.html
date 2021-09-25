@@ -1,0 +1,32 @@
+<!--Symbol is a built-in object whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol 
+    — that’s guaranteed to be unique.  
+    Symbols are often used to add unique property keys to an object.
+    Every Symbol() call is guaranteed to return a unique Symbol.
+-->
+<script>
+    let sym1 = Symbol()
+let sym2 = Symbol('foo')
+let sym3 = Symbol('foo')
+Symbol('foo') === Symbol('foo')  // false
+
+//let sym = new Symbol()  // TypeError
+
+let sym = Symbol('foo')
+typeof sym      // "symbol"
+let symObj = Object(sym)
+typeof symObj   // "object"
+
+
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+let id = Symbol('id');
+person[id] = 140353;
+
+console.log(person.id);
+</script>

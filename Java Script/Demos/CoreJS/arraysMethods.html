@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+//Adding element to an array
+fruits.push("Lemon"); //adds a new element to an array (at the end)  returns the new array length
+//Array.isArray(fruits);  //will return true
+//fruits.toString()  //will convert array to string seperated with ,
+//fruits.join(" * "); //will convert array to string here we can specify seperator
+//fruits.pop(); //removes the last element from an array and  returns the value that was "popped out"
+
+//fruits.shift() //removes the first array element returns the value that was "shifted out"
+//fruits.unshift("Lemon");   //fruits.unshift("Lemon");   returns the new array length.
+
+//fruits.splice(0, 1);   // Removes the first element //second  arg is no of elemets to be removed
+//fruits.splice(2, 0, "Lemon", "Kiwi"); //add new items to an array
+
+//The slice() method creates a new array. It does not remove any elements from the source array.
+
+//const citrus = fruits.slice(1); //Orange,Lemon,Apple,Mango
+//const citrus = fruits.slice(1, 3);  //const citrus = fruits.slice(1, 3);
+//fruits.reverse();
+
+//fruits.sort()
+
+//delete fruits[0];           // Changes the first element in fruits to undefined
+//Using delete may leave undefined holes in the array. Use pop() or shift() instead.
+let text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+</script>
+
+<!--
+<script>
+  // Add a new method
+  Array.prototype.myUcase = function() {
+    for (let i = 0; i < this.length; i++) {
+      this[i] = this[i].toUpperCase();
+    }
+  };
+  
+  // Use the method on any array
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  fruits.myUcase();
+  document.getElementById("demo").innerHTML = fruits;
+  </script>
+-->
+
+</body>
+</html>

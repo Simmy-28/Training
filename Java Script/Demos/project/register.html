@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>dummy e-commerce application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- custom script -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="top-header">
+        <img class="logo" src="logo.jpeg">
+        <nav class="nav-bar">
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="register.html">Registration</a>
+        </nav>
+        <img src="menu.png" onclick="showhidemenu()" class="menu">
+    </header>
+
+
+    <section class="main">
+        <article class="reg-form"  >
+            <form action="#" onsubmit="return validateForm()">
+                
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname">
+                
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname">
+
+                <label for="mobile">Mobile</label>
+                <input type="text" id="mobile" name="mobile">
+
+                <label for="pin">Pin</label>
+                <input type="text" id="pin" name="pin">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+
+                <label for="password">Password</label>
+                <input type="password" id="passwd">
+                <button onclick="showpassword()">show password</button>
+                
+                <input type="submit" value="register">
+                <br>
+                <br>
+                <div class="error"></div>
+            </form>
+        </article>
+    </section>
+
+    <footer class="main-footer">
+        this is footer
+    </footer>
+</body>
+
+</html>

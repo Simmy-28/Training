@@ -1,0 +1,13 @@
+function myFunction() {
+    const x = 50;
+    const y = 0;
+    try {
+        if (y === 0) {
+            throw ("This is division by zero error");
+        } else {
+            const z = x / y;
+        }
+    } catch (error) {
+        alert("Error: " + error);
+    }
+}

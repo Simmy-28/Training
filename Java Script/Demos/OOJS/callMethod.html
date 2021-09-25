@@ -1,0 +1,39 @@
+<!--Method Reuse
+    The call() method is a predefined JavaScript method.
+    
+
+It can be used to invoke (call) a method with an owner object as an argument (parameter)
+With call(), an object can use a method belonging to another object.
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>This example calls the fullName method of person, using it on person1:
+</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+const person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+document.getElementById("demo").innerHTML = person.fullName.call(person1); 
+document.getElementById("demo").innerHTML = person.fullName.call(person2); 
+</script>
+
+</body>
+</html>
+
+

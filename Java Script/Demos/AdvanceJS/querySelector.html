@@ -1,0 +1,35 @@
+<!--querySelector() method returns the first element that matches a specified CSS selector(s) in the document.s-->
+<!-- To return all the matches, use the querySelectorAll() method instead. -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is a p element.</p>
+
+<p   class="test test1 test 2">This is also a p element.</p>
+
+<p>Click the button to add a background color to the first p element in the document.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.querySelector("p").style.backgroundColor = "red";
+
+ document.querySelector("p.example");                   // Get the first <p> element in the document with class="example"
+ //document.querySelector("#demo").innerHTML = "Hello World!";
+
+ //document.querySelector("#demo").innerHTML = "Hello World!";
+ //document.querySelector("div > p"); //Get the first <p> element in the document where the parent is a <div> element
+    //document.querySelector("a[target]");   //Get the first <a> element in the document that has a "target" attribute
+
+   //     document.querySelector("h2, h3").style.backgroundColor = "red";  //multiple selectors
+
+   //var x = document.getElementsByClassName("example"); //Get all elements with the specified class name
+
+  // var x = document.getElementsByClassName("example color"); //var x = document.getElementsByClassName("example color");
+}
+</script>
+
+</body>
+</html>

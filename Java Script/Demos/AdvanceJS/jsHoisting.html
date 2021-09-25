@@ -1,0 +1,32 @@
+<!-- In JavaScript, a variable can be declared after it has been used.-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x; // Declare x
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x;           // Display x in the element
+//Using a let variable before it is declared will result in a ReferenceError.
+x=5;
+var x;
+
+try {
+  carName = "Saab";
+  let carName = "Volvo";
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err;
+}
+
+//Using a const variable before it is declared, is a syntax errror, so the code will simply not run.
+carName = "Volvo";
+const carName; //error
+</script>
+
+</body>
+</html> 

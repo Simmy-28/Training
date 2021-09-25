@@ -1,0 +1,83 @@
+<!--There are 3 ways to declare a JavaScript variable:
+
+Using var
+Using let
+Using const-->
+<!--
+    The let keyword was introduced in ES6 (2015).
+
+Variables defined with let cannot be Redeclared.
+
+Variables defined with let must be Declared before use.
+
+Variables defined with let have Block Scope.
+-->
+<!-- Block Scope :  Variables declared inside a { } block cannot be accessed from outside the block
+let and const have block scope-->
+<!--Variables declared with the var keyword can NOT have block scope.-->>
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h2>JavaScript Variables</h2>
+
+  <p>Create a variable, assign a value to it, and display it:</p>
+
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <script>
+    var carName = "Volvo";
+    document.getElementById("demo1").innerHTML = carName;
+    var carName ="abc";
+  </script>
+
+
+  <script>
+    let x = 10;
+    // Here x is 10
+     
+    {
+      let x = 2;
+      // Here x is 2
+      console.log(x);
+    }
+
+    // Here x is 2
+    document.getElementById("demo2").innerHTML = x;
+
+
+    {
+      let y = 2;
+    }
+
+    // y can NOT be used here
+    {
+      var y = 2;
+    }
+    // y CAN be used here
+    {
+      const a = 10;
+      //a=20;
+    }
+  </script>
+
+  <script>
+    try {
+      const cars = ["Saab", "Volvo", "BMW"];
+      cars = ["Toyota", "Volvo", "Audi"]; //can't reassign
+      // You can change an element:
+      //cars[0] = "Toyota";
+      cars[1]="";
+
+      // You can add an element:
+      //cars.push("Audi");
+    }
+    catch (err) {
+      document.getElementById("demo").innerHTML = err;
+    }
+  </script>
+  <!--Variables declared within a JavaScript function, become LOCAL to the function.-->
+</body>
+
+</html>

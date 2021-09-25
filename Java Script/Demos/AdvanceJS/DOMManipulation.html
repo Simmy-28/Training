@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul id="myList">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ul>
+
+<p>Click the button to append an item to the end of the list.</p>
+
+<button onclick="myFunction()">Try it</button>
+<!--Adding DOM Elements-->
+<script>
+function myFunction() {
+  var node = document.createElement("LI");
+  var textnode = document.createTextNode("Water");
+  node.appendChild(textnode);
+  document.getElementById("myList").appendChild(node);   //The appendChild() method appends a node as the last child of a node.
+}
+</script>
+
+<!--Removing DOM Elements-->
+<script>
+  function myFunction() {
+      var myobj = document.getElementById("demo");
+      myobj.remove();
+      // removeAttribute()  //The removeAttribute() method removes the specified attribute from an element.
+
+      //var list = document.getElementById("myList");   // Get the <ul> element with id="myList"
+//list.removeChild(list.childNodes[0]);           // Remove <ul>'s first child node (index 0)
+    }
+    </script>
+<p><strong>Note:</strong><br>First create an LI node,<br> then create a Text node,<br> then append the Text node to the LI node.<br>Finally append the LI node to the list.</p>
+
+</body>
+</html>

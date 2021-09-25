@@ -1,0 +1,25 @@
+<script>
+
+class Employee{
+
+ 
+    constructor(eid,ename) }
+      this.eid=eid;
+      this.ename=ename;
+    }
+  
+    showData(){
+      console.log("Employee data: "+this.ename)
+    }
+  
+  }
+  
+  class Manager extends Employee{
+  constructor(eid,ename){
+    super(eid,ename)
+  }
+  }
+  
+  var m=new Manager(101,"John");
+  m.showData();
+</script>

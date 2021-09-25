@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Data Types</h2>
+
+<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+<p id="demo"></p>
+
+<script>
+   
+let x=5;         // Now x is undefined
+x = 5;         // Now x is a Number
+x = "John";    // Now x is a String
+let y=true;    // Boolean
+
+document.getElementById("demo").innerHTML = x;
+let length = 16;                               // Number
+let lastName = "Johnson";                      // String
+let a = {firstName:"John", lastName:"Doe"};    // Object
+/*typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof "John Doe"     // Returns "string"
+typeof 314            // Returns "number"
+typeof 3.14           // Returns "number"
+let car;    // Value is undefined, type is undefined
+*/
+</script>
+
+
+
+
+</body>
+</html>

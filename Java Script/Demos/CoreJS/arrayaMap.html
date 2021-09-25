@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.map()</h2>
+<p>Creates a new array by performing a function on each array element.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+// const numbers2 = numbers1.map(value=>value*2;);  //Arrow function
+
+document.getElementById("demo1").innerHTML = numbers2;
+
+function myFunction(value) {
+  return value * 2;
+}
+</script>
+<script>
+    const numbers = [45, 4, 9, 16, 25];
+    const over18 = numbers.filter(myFunction);
+    
+    document.getElementById("demo2").innerHTML = over18;
+    
+    function myFunction(value) {
+      return value > 18;
+    } 
+    </script>
+
+<script>
+    const numbers = [45, 4, 9, 16, 25];
+    let sum = numbers.reduce(myFunction);
+    
+    document.getElementById("demo3").innerHTML = "The sum is " + sum;
+    
+    function myFunction(total, value) {
+      return total + value;
+    }
+    </script>
+
+<script>
+    const numbers = [45, 4, 9, 16, 25];
+    let allOver18 = numbers.every(myFunction);
+    
+    document.getElementById("demo4").innerHTML = "All over 18 is " + allOver18;
+    
+    function myFunction(value) {
+      return value > 18;
+    }
+    </script>
+
+<script>
+    const numbers = [4, 9, 16, 25, 29];
+    //The findIndex() method returns the index of the first array element that passes a test function.
+    document.getElementById("demo5").innerHTML = "First number over 18 has index " + numbers.findIndex(myFunction);
+    
+    function myFunction(value) {
+      return value > 18;
+    }
+    </script>
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+fruits.includes("Mango"); // is true
+    </script>
+
+    <script>
+      //The find() method returns the value of the first array element that passes a test function.
+      const numbers = [4, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+    </script>
+
+</body>
+</html>

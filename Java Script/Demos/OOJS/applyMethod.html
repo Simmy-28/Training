@@ -1,0 +1,39 @@
+<!--Method Reuse
+    With the apply() method, you can write a method that can be used on different objects
+    The apply() method is similar to the call() method
+    The difference is:
+
+The call() method takes arguments separately.
+
+The apply() method takes arguments as an array.
+
+The apply() method is very handy if you want to use an array instead of an argument list.
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+document.getElementById("demo").innerHTML = person.fullName.apply(person1); 
+</script>
+
+</body>
+</html>
+
+

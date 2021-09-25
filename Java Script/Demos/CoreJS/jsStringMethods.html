@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+s
+
+<p id="demo"></p>
+
+<script>
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo").innerHTML = str.slice(7,13);  // Returns Banana
+//str.slice(-12, -6)    // Returns Banana If a parameter is negative, the position is counted from the end of the string.
+str.slice(7);    // Returns Banana,Kiwi
+substring(7, 13)    // Returns Bananas    substring() is similar to slice(). The difference is that substring() cannot accept negative indexes.
+str.substr(7, 6)    // Returns Banana    second parameter specifies the length of the extracted part.
+
+
+let text = "Hello world";
+let newText = text.replace("World", "JavaScript");
+//let newText = text.replace("/World/i", "JavaScript");   //case insensitive
+//let newText = text.replace("/World/g", "JavaScript");   //replace all matches
+
+//ECMAScript 2017 added two String methods: padStart and padEnd to support padding at the beginning and at the end of a string.
+let text = "5";
+text.padStart(4,0)    // Returns 0005
+let text = "5";
+text.padEnd(4,0)     // Returns 5000
+
+let text = "HELLO WORLD";
+
+text.charCodeAt(0)       // Returns 72   //returns the unicode value
+
+let text = "a,b,c,d,e,f";
+const myArray = text.split(",");
+document.getElementById("demo").innerHTML = myArray[0];
+
+
+let text = "a,b,c,d,e,f";
+const myArray = text.split(",");
+document.getElementById("demo").innerHTML = myArray[0];
+
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match(/ain/ig)    // Returns an array [ain,ain,ain]     searches a string for a match against a regular expression, and returns the matches, as an Array object.
+
+
+let text = "Hello world, welcome to the universe.";
+text.includes("world")    // Returns true  The includes() method returns true if a string contains a specified values
+
+var str = "10";
+var res = str.valueOf();  //var str = "Hello World!";
+
+</script>
+
+</body>
+</html>

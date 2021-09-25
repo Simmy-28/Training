@@ -1,0 +1,11 @@
+
+function myFunction() {
+    const j = 70;
+    try {
+        alert("The value of j is : " + j);
+    } catch (error) {
+        alert("Error: " + error.message);
+    } finally {
+        alert("Finally: Finally gets executed")
+    }
+}

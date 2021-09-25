@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var x1 = document.getElementById("myList").lastChild;//will return last child node name
+     // var x2 = document.getElementById("myLI").parentNode.nodeName ; //will return parent node name //The parentNode property returns the parent node of the specified node, as a Node object.
+     //var x3 = document.getElementById("item2").previousSibling.innerHTML  //	A Node object, representing the previous sibling of the node, or null if there is no previous sibling
+    //  var x4 = document.getElementById("item1").nextSibling.innerHTML; //A Node object, representing the next sibling of the node, or null if there is no next sibling
+     // document.getElementById("demo").innerHTML = x;
+     alert(x1);
+     alert(x2);
+     alert(x3); alert(x4);
+      </script>
+  </head>
+<body>
+
+<p>Example list:</p>
+<ul id="myList"><li>Coffee</li><li>Tea</li></ul>
+
+<p>Click the button to get the HTML content of the list's first child node.</p>
+
+
+
+<p><strong>Note:</strong> Whitespace inside elements is considered as text, and text is considered as nodes.</p>
+
+<p>If you add whitespace before the first LI element, the result will be "undefined".</p>
+
+<p id="demo"> <h1>  Hello  </h1></p>
+<p id="demo1"> <h1>  Hello  </h1></p>
+<p id="demo2"> <h1>  Hello  </h1></p>
+
+<!-- 
+<script >
+  //document.getElementById("demo").innerText="HHII";
+//  document.getElementById("demo1").innerHTML="hi"
+ // document.getElementById("demo2").textContent="helllooooos";
+</script>
+
+<script>
+/*function myFunction() {
+  var list = document.getElementById("myList").firstChild.innerHTML;
+  document.getElementById("demo").innerHTML = list;  // someother properites like nodeName  text
+
+} */
+</script> -->
+<!--
+  The innerText property returns just the text, without spacing and inner element tags.
+The innerHTML property returns the text, including all spacing and inner element tags.
+The textContent property returns the text with spacing, but without inner element tags.
+-->
+<!-- 
+<script>
+ /* function getInnerText() {
+    alert(c)
+  }
+  
+  function getHTML() {
+    alert(document.getElementById("demo").innerHTML)
+  }
+  
+  function getTextContent() {
+    alert(document.getElementById("demo").textContent)
+  } */
+</script>  -->
+
+
+</body>
+</html>
