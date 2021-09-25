@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body {
+  background-repeat: no-repeat;
+  background-image: url('image2.jpeg'); 
+}
+
+
+@media only screen and (min-width: 600px) {
+  body { 
+     background-image: url('image1.jpeg'); 
+  }
+}
+/* You can use the media query min-device-width, instead of min-width, which checks the device width, 
+instead of the browser width.  */
+</style>
+</head>
+<body>
+
+<p style="margin-top:360px;">Resize the browser width and the background image will change at 400px.</p>
+
+</body>
+</html>

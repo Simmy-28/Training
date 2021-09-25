@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* If the width property is set to a percentage and the height property is set to "auto",
+ the image will be responsive and scale up and down
+Using this the image can be scaled up to be larger than its original size
+ A better solution, in many cases, will be to use the max-width property instead.*/
+img {
+
+  max-width: 100%;
+  height: auto;
+}
+
+If the max-width property is set to 100%, the image will scale down if it has to,
+ but never scale up to be larger than its original size */
+/*img {
+  max-width: 100%;
+  height: auto;
+}*/
+</style>
+</head>
+<body>
+
+<img src="image1.jpeg" width="460" height="345">
+<p>Resize the browser window to see how the image will scale.</p>
+
+</body>
+</html>

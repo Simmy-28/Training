@@ -1,0 +1,70 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>RWD - Media queries</title>
+<style>
+	body {
+		background: #ffffcc;
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+		line-height: 30px;
+	}
+	
+	.wrapper {
+		background: #fff;
+		margin: 0 auto;
+		padding: 5px 20px;
+		width: 700px;
+	}
+	
+	/* Red 767px and below width */
+	@media   (max-width: 767px) {
+		.wrapper {
+			background: #ff0000;
+			width: 90%
+		}
+	}
+
+/* Green  768 px - 960px width*/
+ 	@media all and (min-width: 768px) and (max-width: 960px) {
+		.wrapper {
+			background: #66ccff;
+			width: 80%
+		}
+	}
+
+
+	/* Blue */
+	@media all and (min-width: 900px) and (max-width: 1200px) {
+		.wrapper {
+			background: greenyellow;
+			width: 80%
+		}
+	}
+
+	/* Orange */
+	@media all and (min-width: 1200px)  {
+		.wrapper {
+			background: orange;
+			width: 80%
+		}
+	}
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+	  <p><strong>Lorem Ipsum</strong>
+		 is simply dummy text of the printing and typesetting 
+		 industry. Lorem Ipsum has been the industry's standard 
+		 dummy text ever since the 1500s, when an unknown printer
+		  took a galley of type and scrambled it to make a type 
+		  specimen book. It has survived not only five centuries, 
+		  but also the leap into electronic typesetting, remaining 
+		  essentially unchanged. It was popularised in the 1960s with
+		   the release of Letraset sheets containing Lorem Ipsum passages, 
+		   and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/*
+A standard desktop view has a landscape orientation, and a design that works well in this orientation
+ may not work as well when viewed on a phone or tablet in portrait mode. 
+Testing for orientation can help you to create a layout which is optimised for devices in portrait mode.
+*/
+body {
+  background-color: lightgreen;
+}
+
+@media only screen and (orientation: portrait) {
+  body {
+    background-color: lightblue;
+  }
+}
+</style>
+</head>
+<body>
+
+<p>Resize the browser window. When the width of this document is larger than the height, the background color is "lightblue", otherwise it is "lightgreen".</p>
+
+</body>
+</html>
+

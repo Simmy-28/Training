@@ -1,0 +1,72 @@
+@media screen and (min-width: 600px)  {
+    @media  (orientation: landscape)
+    {
+    body {
+        color: blue;
+    }}
+    @media  (orientation:portrait )
+    {
+
+    }
+
+}
+//"or" logic in media queries
+@media screen and (min-width: 600px), screen and (orientation: landscape) {
+    body {
+        color: blue;
+    }
+}
+
+//"not" logic in media queries
+// the text will only be blue if the orientation is portrait.
+@media not all and (orientation: landscape) {
+    body {
+        color: blue;
+    }
+}
+/*
+The resolution media feature specifies the resolution of the output device in pixel density,
+ also known as dots per inch or DPI. The resolution media feature does accept the min and max prefixes. 
+ Additionally, the resolution media feature will 
+accept dots per pixel (1.3dppx), dots per centimeter (118dpcm), and other length based resolution values.*/
+
+
+@media print and (min-resolution: 300dpi) {...}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen  and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto ;
+  background-color: #2196F3;
+  padding: 2em;
+ 
+}
+
+.grid-row {
+   grid-row-start: span 3;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 2vw 0;
+  font-size: 2vw;
+  border: 0.1vw solid;
+}
+
+ .item1 {
+  grid-column-start: span 8;
+  
+} 
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">Time Table</div>
+  <!-- row1 -->
+   
+        <div>Session</div>
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+   
+         <!-- row2 -->
+   
+         <div>S1</div>
+         <div class="grid-row">Holiday</div>
+         <div>Math</div>
+         <div>Math</div>
+         <div>Math</div>
+         <div>Math</div>
+         <div>Math</div>
+         <div class="grid-row">Holiday</div>
+         
+         <!-- row3 -->
+   
+          <div>S2</div>
+          <div>Science</div>
+          <div>Science</div>
+          <div>Science</div>
+          <div>Science</div>
+          <div>Science</div>
+
+
+          <!-- row4 -->
+   
+          <div>S3</div>
+          <div>CS</div>
+          <div>CS</div>
+          <div>CS</div>
+          <div>CS</div>
+          <div>CS</div>
+          
+
+          <div class="item1">Break</div>
+
+   <!-- row5 -->
+   
+   <div>S1</div>
+   <div class="grid-row">Holiday</div>
+   <div>Math</div>
+   <div>Math</div>
+   <div>Math</div>
+   <div>Math</div>
+   <div>Math</div>
+   <div class="grid-row">Holiday</div>
+    <!-- row6 -->
+
+    <div>S2</div>
+    <div>Science</div>
+    <div>Science</div>
+    <div>Science</div>
+    <div>Science</div>
+    <div>Science</div>
+
+
+    <!-- row7 -->
+
+    <div>S3</div>
+    <div>CS</div>
+    <div>CS</div>
+    <div>CS</div>
+    <div>CS</div>
+    <div>CS</div>
+    
+    
+  
+</div>
+</body>
+</html>

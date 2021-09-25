@@ -1,0 +1,57 @@
+
+.myStyle{
+    font-size: 16px;
+}
+
+@media (max-width: 797px){
+    .myStyle{
+        color: royalblue;
+        padding: 20px;
+        border: 2px dashed black;
+        background-color: palegreen;
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 2em;
+    }
+}
+@media (min-width: 797px){
+    .myStyle{
+        color: blueviolet;
+        padding: 20px;
+        border: 2px dashed black;
+        background-color: palevioletred;
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 2.5em;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 978px){
+    .myStyle{
+        color: greenyellow;
+        padding: 60px;
+        border: 2px dashed black;
+        background-color: blueviolet;
+        font-size: 2rem;
+    }
+    p{
+        font-size: 3em;
+    }
+}
+
+
+@media (min-width: 1200px){
+    .myStyle{
+        color: cyan;
+        padding: 80px;
+        border: 2px dashed black;
+        background-color: yellowgreen;
+        font-size: 3rem;
+    }
+    p{
+        font-size: 3.5em;
+    }
+}

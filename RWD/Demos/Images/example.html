@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* This sets the width of the image to 70 percent of the width of its parent */
+   
+    div {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 60%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: khaki;
+    font-size: 1rem;
+}
+nav:hover
+{
+    background-color: lightcoral;
+}
+
+html {
+    font-size: 22px;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/*Using media queries to improve the mobile experience */
+@media (max-width: 768px) {
+    img{
+        width: 100%
+        
+    }
+    html {
+        font-size: 14px
+    }
+}
+
+    </style>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About me</a>
+        <a href="#">Contact</a>
+    </nav>
+    <h1>Welcome to my website</h1>
+    <div>
+    <image src="image1.jpeg"  >
+    </div>
+        
+
+
+</body>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /*
+     If the background-size property is set to "contain", the background image will scale,
+      and try to fit the content area. However, the image will keep its aspect ratio  */
+      /*
+      If the background-size property is set to "100% 100%", 
+      the background image will stretch to cover the entire content area:
+      */
+      /*
+      If the background-size property is set to "cover", the background image will scale to cover the entire content area. 
+      Notice that the "cover" value keeps the aspect ratio, and some part of the background image may be clipped */
+div {
+  width: 100%;
+  height: 400px;
+  background-image: url('image1.jpeg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<p>Resize the browser window to see the effect.</p>
+
+<div></div>
+
+</body>
+</html>
